@@ -13,11 +13,9 @@ knex("famous_people")
     last_name: lastname,
     birthdate: birthday
   })
-  .then(row => {
-    console.log(row);
+  .then(() => {
     process.exit(1);
   })
   .catch(e => {
-    console.log(e);
     process.exit(1);
   });
