@@ -1,0 +1,23 @@
+{
+  "name": "test_db",
+  "version": "1.0.0",
+  "description": "'test pg'",
+  "main": "index.js",
+  "dependencies": {
+    "pg": "^7.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corrinachow/test_db.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/corrinachow/test_db/issues"
+  },
+  "homepage": "https://github.com/corrinachow/test_db#readme"
+}
