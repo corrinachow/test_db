@@ -6,7 +6,7 @@ var knex = require("knex")({
 });
 
 knex("famous_people")
-  .where({ first_name: process.argv.slice(2).toString() })
+  .where({ first_name: process.argv[2] })
   .then((rows) => {
     console.log("Searching ...");
     console.log(
