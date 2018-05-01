@@ -13,9 +13,7 @@ knex("famous_people")
     last_name: lastname,
     birthdate: birthday
   })
-  .then(() => {
-    process.exit(1);
-  })
   .catch(e => {
-    process.exit(1);
-  });
+    console.log(e)
+  })
+  .finally(() => knex.destroy());

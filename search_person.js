@@ -17,13 +17,13 @@ function handleResult(rows) {
       }, born '${row.birthdate.toISOString().slice(0, 10)}'`
     );
   }
-  process.exit(1);
+  return;
 }
 
 knex("famous_people")
   .where({ first_name: process.argv[2] })
   .then(result => handleResult(result))
-  .catch(err =>{
+  .catch(err => {
     console.log(err);
-    process.exit(1);
-  });
+  })
+  .finally(() => knex.destroy());
